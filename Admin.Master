@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Attendance_System_Online.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table align="center">
+            <tr style="width: 1200px; color: Aqua; height: 150px">
+                <td>
+                    <asp:Image ID="Image1" runat="server" BorderColor="#666666" BorderWidth="3px" 
+                        Height="150px" ImageUrl="~/Images/AMS_Logo.jpg" Width="1200px" />
+                </td>
+            </tr>
+            <tr style="border-width: 8px; border-color: #666666; width: 1200px; color: #666666; height: 60px" 
+                bgcolor="#c547ff">
+                <td>
+                    <table align="center" cellpadding="10">
+                        <tr style="border-color: #666666;">
+                            <td>
+                                <asp:Button ID="Course" runat="server" Text="Course" Height="49px" 
+                                    Width="171px" Font-Bold="True" Font-Size="Medium" 
+                                    CausesValidation="False" BorderColor="#666666" BackColor="Snow" OnClick="Course_Click"/>
+                            </td>
+                            <td>
+                                <asp:Button ID="Subject" runat="server" Text="Subject" Height="49px" 
+                                    Width="171px" Font-Bold="True" Font-Size="Medium" 
+                                    CausesValidation="False" BorderColor="#666666" BackColor="White" OnClick="Subject_Click"/>
+                            </td>
+                            <td>
+                                <asp:Button ID="Teacher" runat="server" Text="Teachers" Height="49px" 
+                                    Width="171px" Font-Bold="True" Font-Size="Medium" 
+                                    CausesValidation="False" BorderColor="#666666" BackColor="White" OnClick="Teacher_Click"/>
+                            </td>
+                            <td>
+                                <asp:Button ID="TeacherSubject" runat="server" Text="Assign Subject" Height="49px" 
+                                    Width="171px" Font-Bold="True" Font-Size="Medium" 
+                                    CausesValidation="False" BorderColor="#666666" BackColor="White" OnClick="TeacherSubject_Click"/>
+                            </td>
+                            <td>
+                                <asp:Button ID="Student" runat="server" Text="Student" Height="49px" 
+                                    Width="171px" Font-Bold="True" Font-Size="Medium" 
+                                    CausesValidation="False" BorderColor="#666666" BackColor="White" OnClick="Student_Click"/>
+                            </td>
+                            <td>
+                                <asp:Button ID="Logout" runat="server" Text="Logout" Height="49" Width="171" 
+                                    Font-Size="Medium" Font-Bold="True"  
+                                    CausesValidation="False" BorderColor="#666666" BackColor="White" OnClick="Logout_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+                <table align="center" width="1200">
+            <tr style="width: 1200px; color: Gray; height: 20px;" bgcolor="Gray">
+                <td style="width:1100px; height:25px; background-color:Gray; text-align:center; color:White">&copy
+                    <asp:Label ID="Label1" runat="server" Text="Attendance System" 
+                        ForeColor="White" Font-Size="Medium" Font-Bold="True"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

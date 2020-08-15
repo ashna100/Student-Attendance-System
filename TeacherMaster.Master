@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TeacherMaster.master.cs" Inherits="Attendance_System_Online.TeacherMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table align="center">
+                <tr style="width:1200px; color:aqua; height:150px">
+                    <td>
+                        <asp:image ID="Image1" runat="server" BorderColor="#666666" BorderWidth="3px" Height="150px" Width="1200px" 
+                            ImageUrl="~/Images/AMS_Logo.jpg" />
+                    </td>
+                </tr>
+                <tr style="border-width:8px; border-color:#666666; width:1200px; color:#666666; height:60px" bgcolor="#c547ff">
+                    <td>
+                        <table align="center" cellPadding="8">
+                            <tr style="border-color:#666666">
+                                <td>
+                                    <asp:Button ID="Button1" runat="server" Text="Home" CausesValidation="false" Font-Bold="true"
+                                        font-size="medium" Height="49px" Width="171px" BorderColor="#666666" BackColor="Snow" OnClick="Button1_Click" />
+                                </td>
+                                <td></td><td></td><td></td>
+                                <td>
+                                    <asp:Button ID="Button2" runat="server" Text="Mark Attendance" CausesValidation="false" Font-Bold="true"
+                                        font-size="medium" Height="49px" Width="171px" BorderColor="#666666" BackColor="Snow" OnClick="Button2_Click" />
+                                </td>
+                                <td></td><td></td><td></td>
+                                <td>
+                                    <asp:Button ID="Button3" runat="server" Text="Lectures Taken" CausesValidation="false" Font-Bold="true"
+                                        font-size="medium" Height="49px" Width="171px" BorderColor="#666666" BackColor="Snow" OnClick="Button3_Click" />
+                                </td>
+                                <td></td><td></td><td></td>
+                                <td>
+                                    <asp:Button ID="Button4" runat="server" Text="Logout" CausesValidation="false" Font-Bold="true"
+                                        font-size="medium" Height="49px" Width="171px" BorderColor="#666666" BackColor="Snow" OnClick="Button4_Click" />
+                                </td>
+                                <td>
+                                    
+                                    <asp:Label ID="lblshow" runat="server" Font-Bold="true" Font-Size="Larger" ></asp:Label>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <table align="center" width="1200px">
+                <tr style="width:1200px; height:20px; bgcolor:grey; color:grey">
+                    <td style="width:1100px; height:25px; color:white; text-align:center; background-color:gray ">&copy;
+                    <asp:Label ID="Label1" runat="server" Text="Attendance System" ForeColor="white" Font-Size="Medium" Font-Bold="true"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
